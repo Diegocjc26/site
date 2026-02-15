@@ -1,0 +1,215 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #2563eb;
+  color: white;
+  padding: 50px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.projeto {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.projeto h3 {
+  color: #dc2626;
+}
+
+.projeto a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.projeto a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 8px;
+}
+
+footer a {
+  color: #2563eb;
+}
+footer > p {
+  margin: 0 0 16px;
+  color: #ffff;
+}
+.form-contato {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+footer #contato {
+  background: #ffffff; /* branco */
+  color: #111827; /* texto escuro */
+  padding: 20px;
+  border-radius: 8px;
+}
+/* Labels e textos do formulário ficam escuros */
+footer #contato label,
+footer #contato p,
+footer #contato h2,
+footer #contato address {
+  color: #111827;
+}
+
+.campo {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.campo label {
+  font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.linha {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0 18px;
+}
+
+.form-contato button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-contato input[type="submit"] {
+  width: 75%;
+  padding: 16px 18px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2em;
+  }
+  section {
+    padding: 20px;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}

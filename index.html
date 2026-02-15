@@ -4,28 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego</title>
-
-    <style>
-      .foto-perfil {
-        width: 180px;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Diego</h1>
+      <h1>Diego Carneiro de Jesus</h1>
+      <p>
+        Estudante de Desenvolvimento Web e IA | Apaixonado por criar soluções
+        digitais
+      </p>
 
       <nav>
-        <!--  Seção de navegação do site -->
         <ul>
-          <!-- Lista não ordenada para links do nosso meenu -->
           <li><a href="#sobre">Sobre min</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
-          <!-- <li> Sobre min</li> -->
         </ul>
       </nav>
     </header>
@@ -42,7 +36,10 @@
 
       <article>
         <p>
-          Olá! Eu sou o Diego, um desenvolvedor Web, adicionado mais um texto
+          Olá! Eu sou o Diego, Sou estudante de programação e IA, focado em
+          desenvolvimento web. Gosto de resolver problemas com código e aprender
+          novas tecnologias. Minha jornada começou com HTML/CSS e agora estou
+          explorando JavaScript e projetos práticos.
         </p>
       </article>
 
@@ -55,17 +52,15 @@
           <li>JavaScript</li>
         </ul>
       </aside>
+      <h3>Habilidades Comportamentais</h3>
+      <ul>
+        <li>Aprendizado rápido e autodidata</li>
+        <li>Trabalho em equipe e comunicação</li>
+        <li>Resolução de problemas e criatividade</li>
+        <li>Persistência e atenção aos detalhes</li>
+      </ul>
     </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-
-      <article>
-        <h3>Portfólio</h3>
-
-        <p>Este foi o primeiro que desenvolvido, estudando front-end.</p>
-      </article>
-    </section>
     <section id="habilidades">
       <h2>Habilidades e tecnologias</h2>
       <table>
@@ -103,8 +98,53 @@
       </table>
     </section>
 
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <article class="projeto">
+        <h3>Jogo da Velha (Tic-Tac-Toe)</h3>
+        <p>
+          Jogo interativo desenvolvido com HTML, CSS e JavaScript puro. Inclui
+          detecção de vitória, empate, destaque das casas vencedoras e
+          animações.
+        </p>
+        <p>
+          <strong>Link de demonstração:</strong>
+          <a href="https://diegocjc26.github.io/Jogo-da-velha/" target="_blank"
+            >Ver demo</a
+          >
+        </p>
+        <p>
+          <strong>Código:</strong>
+          <a
+            href="https://github.com/diegocjc26/Jogo-da-velha"
+            target="_blank"
+            rel="noopener"
+          >
+            Ver repositório
+          </a>
+        </p>
+        <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+      </article>
+
+      <article class="projeto">
+        <h3>Portfólio Pessoal</h3>
+        <p>
+          Landing page desenvolvida para apresentar habilidades e projetos. Foco
+          em responsividade e design clean.
+        </p>
+        <p>
+          <strong>Link de demonstração:</strong>
+          <a href="https://diegocjc26.github.io/site/" target="_blank"
+            >(Em desenvolvimento)</a
+          >
+        </p>
+        <p><strong>Tecnologias:</strong> HTML, CSS</p>
+      </article>
+    </section>
+
     <footer>
-      <p>Direitos Reservados a Diego</p>
+      <p>Direitos Reservados a Diegocjc26</p>
 
       <section id="contato">
         <h2>Contato</h2>
@@ -116,37 +156,47 @@
           <a href="tel:+5511999999999">+55 11 99999-9999</a>
         </address>
 
-        <form action="">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required /> <br />
+        <form class="form-contato" action="">
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required />
+          </div>
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required /> <br />
+          <div class="campo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-          <label for="tel">Telefone:</label>
-          <input type="tel" id="tel" name="tel" /> <br />
+          <div class="campo">
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" />
+          </div>
 
-          <label for="assunto">Assunto:</label>
-          <select name="assunto" id="assunto">
-            <option value="orcamento">Orçamento</option>
-            <option value="duvida">Dúvida</option>
-            <option value="outro">Outro</option>
-          </select>
+          <div class="campo">
+            <label for="assunto">Assunto:</label>
+            <select name="assunto" id="assunto">
+              <option value="orcamento">Orçamento</option>
+              <option value="duvida">Dúvida</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
 
-          <br />
-          <label for="mensagem">Mensagem:</label>
-          <textarea
-            name="mensagem"
-            id="mensagem"
-            cols="20"
-            rows="5"
-            required
-          ></textarea>
-          <input type="checkbox" id="inscricao" name="inscricao" />
-          <label for="inscricao"
-            >Deseja receber minha newsletter? fique por dentro</label
-          >
-          <br />
+          <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <div class="linha">
+            <input type="checkbox" id="inscricao" name="inscricao" />
+            <label for="inscricao"
+              >Deseja receber minha newsletter? Fique por dentro</label
+            >
+          </div>
           <input type="submit" value="Enviar mensagem" />
         </form>
       </section>
